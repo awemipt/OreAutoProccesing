@@ -30,4 +30,4 @@ plt.title('t10 vs Energy for Various Ores')
 plt.legend()
 plt.grid(True)
 
-plt.savefig("plot.png")
+plt.savefig("result.png")
