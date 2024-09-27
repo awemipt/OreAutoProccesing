@@ -24,11 +24,10 @@ for i, ore in enumerate(ores):
     
     plt.plot(energy_fit, t10_fit, label=f'Ore {i+1} Fit: A={A:.2f}, b={b:.2f}', color=colors[i])
 
-plt.xlabel('Energy')
-plt.ylabel('t10')
+plt.xlabel('Energy, kWth/t')
+plt.ylabel('t10 %')
 plt.title('t10 vs Energy for Various Ores')
 plt.legend()
 plt.grid(True)
 
-# Show the plot
 plt.savefig("plot.png")
