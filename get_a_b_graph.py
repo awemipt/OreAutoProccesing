@@ -35,7 +35,7 @@ plt.grid(True)
 
 plt.savefig("result.png")
 
-SG = 1000 * 2.85
+SG =  2.85
 
 
 DWI = np.array([])
