@@ -25,7 +25,7 @@ class indexes:
     
     @staticmethod
     def getM_ih(A:float, b:float) -> float:
-        return 577 * (A*b)*(-1)
+        return 577 * (A*b)**(-1)
     
     @staticmethod
     def getM_ib(BWI:float) -> float:
