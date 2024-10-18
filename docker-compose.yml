@@ -1,0 +1,29 @@
+services:
+
+  db-postgres:
+    image: postgres
+    restart: always
+    container_name: postgres-db
+    user: postgres
+
+    environment:
+      POSTGRES_HOST: "localhost"
+      POSTGRES_USER: user 
+      POSTGRES_PASSWORD: 123
+    # volumes:
+    #   - postgres-data_a:/var/lib/postgresql/data
+    expose:
+      - 5444
+    ports:
+      - 5444:5432 
+    networks:
+      - backend
+    healthcheck:
+      test: [ "CMD", "pg_isready" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5 
+
+networks:
+  backend:
+    driver: bridge

@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5444,
+            "driver": "PostgreSQL",
+            "name": "ore",
+            "database": "postgres",
+            "username": "user",
+            "password": "123"
+        }
+    ]
+}
